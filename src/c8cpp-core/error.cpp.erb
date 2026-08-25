@@ -1,0 +1,22 @@
+#include "c8cpp-core/error.hpp"
+
+#include <format>
+
+// FILE IS GENERATED
+
+<%-
+  @res_path = template_path.join('..', '..', '..', 'res')
+
+  def error_list
+    @error_list ||= YAML.load_file(@res_path.join('error.yaml'))
+  end
+-%>
+
+namespace C8::Core::Error {
+  Error::Error(std::string_view what) : what_(what) {}
+
+  <%- error_list.each do |error| -%>
+    <%= error %>::<%= error %>(std::string_view detail) : Error(std::format("C8::Core::<%= error %>: {}", detail)) {}
+
+  <%- end -%>
+} // namespace C8::Core::Error

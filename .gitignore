@@ -1,0 +1,56 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+# Compiled Applications
+**/bin/*
+
+# Dependency files
+*.dep
+*.mf
+
+# Temporary files
+*.sw?
+
+# QtCreator files
+*.config
+*.creator
+*.creator.user
+*.files
+*.includes
+*.autosave
+
+# My rake files
+Rake*.rb
+
+# Databases
+*.db
+
+# Tags
+tags
+
+# Images
+*.bmp
+*.tga
+*.jpg
+*.png
+
+# Diff files
+*.diff
+
+# Blender backup files
+*.blend?
+
+##
+/.obj
+/export.yml

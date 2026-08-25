@@ -1,0 +1,31 @@
+﻿---
+AlignAfterOpenBracket: DontAlign
+AllowShortCaseLabelsOnASingleLine: 'false'
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: 'false'
+AlwaysBreakTemplateDeclarations: 'Yes'
+BinPackArguments: 'true'
+BinPackParameters: 'true'
+ColumnLimit: '120'
+ConstructorInitializerIndentWidth: '2'
+ContinuationIndentWidth: '2'
+IndentCaseLabels: 'true'
+IndentWidth: '2'
+IndentWrappedFunctionNames: 'true'
+KeepEmptyLinesAtTheStartOfBlocks: 'false'
+Language: Cpp
+MaxEmptyLinesToKeep: '1'
+NamespaceIndentation: All
+PointerAlignment: Left
+SortIncludes: 'true'
+Standard: Cpp11
+TabWidth: '2'
+UseTab: Never
+BraceWrapping:
+  AfterFunction: true
+  AfterControlStatement: MultiLine
+  # BeforeLambdaBody: true
+BreakBeforeBraces: Custom
+
+...
